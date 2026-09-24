@@ -72,12 +72,11 @@ void Echo_server::handle_client(int client_fd) {
     }
 
     if (input == "quit") {
-      std::string s = "Encerrando o servidor...\n";
+      std::string s = "Encerrando a conexão com o servidor...\n";
       send(client_fd, s.c_str(), s.size(), 0);
 
       close(client_fd);
-      stop();
-      return;
+      
     }
 
     else if (input.rfind("echo ", 0) == 0) {

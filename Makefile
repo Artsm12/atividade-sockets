@@ -22,11 +22,9 @@ all: $(TARGET_SERVER) $(TARGET_CLIENT)
 
 $(TARGET_SERVER): $(OBJS_SERVER) $(OBJS_UTILS)
 	$(CXX) $(CXXFLAGS) $^ -o $@
-	@echo "Servidor compilado -> ./$(TARGET_SERVER)"
 
 $(TARGET_CLIENT): $(OBJS_CLIENT)
 	$(CXX) $(CXXFLAGS) $^ -o $@
-	@echo "Cliente compilado -> ./$(TARGET_CLIENT)"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(dir $@)
