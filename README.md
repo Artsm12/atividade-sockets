@@ -1,4 +1,4 @@
-# 📦 Servidor e Cliente de Echo Multi-threaded
+# 📦 Servidor de Echo Multi-threaded
 
 > Atividade de Redes de Computadores desenvolvida utilizando C++20.
 
