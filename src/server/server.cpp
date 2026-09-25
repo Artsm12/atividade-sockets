@@ -76,7 +76,7 @@ void Echo_server::handle_client(int client_fd) {
       send(client_fd, s.c_str(), s.size(), 0);
 
       close(client_fd);
-      
+
     }
 
     else if (input.rfind("echo ", 0) == 0) {

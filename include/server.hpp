@@ -11,8 +11,6 @@ public:
       : _port(port), _server_fd(-1), _is_running(false), _pool(POOL_SIZE) {}
   ~Echo_server();
 
-  Echo_server &operator=(Echo_server &other) = delete;
-
   void start();
 
 private:
