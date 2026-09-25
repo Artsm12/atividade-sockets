@@ -1,6 +1,6 @@
 # 📦 Servidor e Cliente de Echo Multi-threaded
 
-> Atividade de Redes de Computadores desenvolvido utilizando C++20.
+> Atividade de Redes de Computadores desenvolvida utilizando C++20.
 
 ## 🛠️ Pré-requisitos
 
