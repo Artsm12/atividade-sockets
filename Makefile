@@ -3,7 +3,6 @@ CXXFLAGS := -std=c++20 -pthread -Iinclude -MMD -MP
 
 SRC_DIR  := src
 OBJ_DIR  := objs
-DOCS_DIR  = docs
 
 TARGET_SERVER := server
 TARGET_CLIENT := client
@@ -33,9 +32,6 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 -include $(DEPS)
 
 clean:
-	rm -rf $(OBJ_DIR) $(TARGET_SERVER) $(TARGET_CLIENT) $(DOCS_DIR)
+	rm -rf $(OBJ_DIR) $(TARGET_SERVER) $(TARGET_CLIENT) 
 
-docs:
-	@doxygen Doxyfile
-
-.PHONY: all clean docs
+.PHONY: all clean 
